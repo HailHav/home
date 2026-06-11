@@ -10,25 +10,64 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <nav class="navbar bg-body-tertiary px-3 mb-3 bg-primary">
+        <a class="navbar-brand" href="#">Welcome</a>
+        <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#scrollspyHeading1">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#scrollspyHeading2">Professional Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#scrollspyHeading3">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Linkedin</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Github</a>
+      </li>
+
+
+      <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+        <h4 id="scrollspyHeading1">First heading</h4>
+        <p>...</p>
+        <h4 id="scrollspyHeading2">Second heading</h4>
+        <p>...</p>
+        <h4 id="scrollspyHeading3">Third heading</h4>
+        <p>...</p>
+        <h4 id="scrollspyHeading4">Fourth heading</h4>
+        <p>...</p>
+        <h4 id="scrollspyHeading5">Fifth heading</h4>
+        <p>...</p>
+      </div>
+
+
 
     <section id="about">
         <div class="container">
             <div class="row">
-                <div class="col-md-5 mt-5 text-center">
+                <div class="col-md-6 mt-5 text-center">
                     <h2>About Me</h2>
-                    <p> My name is Hailey Anderson. I'm a software engineer with intrests in Data, Infrastructure and User Interface based in Providence, RI. 
+                    <p> My name is Hailey Anderson. I'm a software engineer with experience in Data, Infrastructure and User Interface based in Providence, RI. 
                         My work focuses on designing scalable ETL pipelines and data governance systems that enable smarter decision-making. 
                         Recent projects include building automated data infrastructure for cloud operations and analyzing policy data to reveal 
                         systemic inequities in immigration systems. Beyond core data work, I'm passionate about technology that serves community.
                         I believe data, innovation and the internet should be accessible tools for social good, whether that's informing policy, improving organizational outcomes,
                         or helping organizations tell their stories online.
-    
+                        <br><br>
                         I'm available for:
-                    
+                        <br><br>
                         Data engineering projects — ETL pipelines, data governance, cloud infrastructure
                         Web development services — Building clean, effective websites for nonprofits, small businesses and mission-driven organizations
                         Data analysis — Turning raw data into insights for policy, research, or organizational impact
-                    
+                        <br><br>
                         Let's build something meaningful together.</p>
                 </div>  
                 <div class="card col-md-3 mt-5 ms-auto" style="width: 18rem;">
