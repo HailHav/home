@@ -10,11 +10,11 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav class="navbar bg-primary bg-body-tertiary px-3 mb-3 ">
+    <nav id="navbar-horizontal" class="navbar bg-primary px-3 mb-3 ">
         <a class="navbar-brand" href="#">Welcome</a>
         <ul class="nav nav-pills">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link" aria-current="page" href="#">Home</a>
         </li>
           <li class="nav-item">
             <a class="nav-link" href="#scrollspyHeading1">Projects</a>
@@ -25,14 +25,15 @@
           <li class="nav-item">
             <a class="nav-link" href="#scrollspyHeading3">Contact</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Linkedin</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Github</a>
+          </li>
         </ul>
       </nav>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Linkedin</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Github</a>
-      </li>
+
 
 <!--
       <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
@@ -72,21 +73,27 @@
                 </div>  
                 <div class="card col-md-3 mt-5 ms-auto" style="width: 18rem;">
                      <img src="hailey_smile.jpg" class="card-img-top" alt="Woman Smiling in Mirrored Room">
-                     <div class="card-body">
+                     <div id="navbar-vertical" class="card-body">
                     <h5 class="card-title">Hailey Anderson</h5>
                      <p class="card-body fs-5">Data | Full-Stack | Infrastructure | Community-Focus | Purpose-Driven</p>
                      <a href="#" class="btn btn-primary">Linkedin</a> <a href="#" class="btn btn-primary">Github</a>
                      <!-- scrollspy vv -->
-                     <a href="#" class="btn btn-primary">Projects</a>
-                     <a href="#" class="btn btn-primary">Professional Experience</a>
-                     <a href="#" class="btn btn-primary">Contact</a>
+                     <a href="#scrollspyHeading1" class="btn btn-primary">Projects</a>
+                     <a href="#scrollspyHeading2" class="btn btn-primary">Professional Experience</a>
+                     <a href="#scrollspyHeading3" class="btn btn-primary">Contact</a>
                      </div>
                 </div>  
             </div>
         </div>
     </section>
+
+
+    <div data-bs-spy="scroll" data-bs-target="#navbar-horizontal" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0"></div>
+    <div data-bs-spy="scroll" data-bs-target="#navbar-vertical" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0"></div>
+
+
         <section id="projects" class="mt-5">
-            <h2>Projects</h2>
+            <h2  id="scrollspyHeading1">Projects</h2>
             <div class="row">
                 <div class="col-md-4">
                     <div class="card">
@@ -100,8 +107,11 @@
                 <!-- Repeat for more projects -->
             </div>
         </section>
+        <section id="professional experience"  class="mt-5">
+            <h2  id="scrollspyHeading2">Professional Experience</h2>
+        </section>
         <section id="contact" class="mt-5">
-            <h2>Contact</h2>
+            <h2  id="scrollspyHeading3">Contact</h2>
             <form>
                 <div class="mb-3">
                     <label for="name" class="form-label">Name</label>
@@ -119,7 +129,10 @@
             </form>
         </section>
     </div>
-
+    </body>
+    </html>
+    </div>   <!-- ending of div of scrolling -->
+    </div>   <!-- ending of div of scrolling -->
 
     <!-- Your content here -->
     <!-- Bootstrap JS and dependencies -->
