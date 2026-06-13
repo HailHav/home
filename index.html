@@ -14,7 +14,7 @@
         <a class="navbar-brand" href="#">Welcome</a>
         <ul class="nav nav-pills">
         <li class="nav-item text-white">
-          <a class="nav-link text-white" aria-current="page" href="#">Home</a>
+          <a class="nav-link active text-white" aria-current="page" href="scrollspyHeading0">Home</a>
         </li>
           <li class="nav-item">
             <a class="nav-link text-white" href="#scrollspyHeading1">Projects</a>
@@ -50,12 +50,14 @@
       </div>
 -->
 
+<div data-bs-spy="scroll" data-bs-target="#navbar-horizontal" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0"></div>
+<div data-bs-spy="scroll" data-bs-target="#navbar-vertical" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0"></div>
 
     <section id="about">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 mt-5 text-center">
-                    <h2>About Me</h2>
+                    <h2 id="scrollspyHeading0">About Me</h2>
                     <p> My name is Hailey Anderson. I'm a software engineer with experience in Data, Infrastructure and User Interface based in Providence, RI. 
                         My work focuses on designing scalable ETL pipelines and data governance systems that enable smarter decision-making. 
                         Recent projects include building automated data infrastructure for cloud operations and analyzing policy data to reveal 
