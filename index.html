@@ -11,10 +11,44 @@
 </head>
 <body>
     <nav id="navbar-horizontal" class="navbar navbar-dark bg-primary px-3 mb-3 d-flex align-items-center">
-        <a class="navbar-brand" href="#/">
+             <!-- for small screen-->
+        <a class="navbar-brand d-md-none" href="#/">
+            <img src="Hailey Profolio Logo.png" alt="Logo" height="70" class="d-inline-block">
+            H's Portfolio
+        </a>
+
+        <a class="navbar-brand d-none d-md-inline" href="#/">
             <img src="Hailey Profolio Logo.png" alt="Logo" height="70" class="d-inline-block">
             Hailey's Developer Portfolio
         </a>
+
+        <!-- for small screen triggers hamburger-->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+          <!-- for small screen: Hamburger-->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="nav nav-pills">
+                <li><a class="nav-link" href="#">Home</a></li>
+                <li><a class="nav-link" href="#">Projects</a></li>
+                <li class="nav-item text-white">
+                    <a class="nav-link active text-white" aria-current="page" href="#scrollspyHeading0">Home</a>
+                  </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-white" href="#scrollspyHeading1">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-white" href="#scrollspyHeading2">Professional Experience</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-white" href="#scrollspyHeading3">Contact</a>
+                    </li>
+                  </ul>
+            </ul>
+        </div>
+
+
         <ul class="nav nav-pills">
         <li class="nav-item text-white">
           <a class="nav-link active text-white" aria-current="page" href="#scrollspyHeading0">Home</a>
@@ -29,7 +63,7 @@
             <a class="nav-link text-white" href="#scrollspyHeading3">Contact</a>
           </li>
         </ul>
-        </div>
+
       </nav>
 
 <div data-bs-spy="scroll" data-bs-target="#navbar-horizontal"  tabindex="0"></div>
